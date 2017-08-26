@@ -5,5 +5,5 @@ function copyToClipboard(element) {
   document.execCommand("copy");
   $temp.remove();
 }
-// 
+//
 // $('.copy-button').click(copyToClipboard('.copy-button'));

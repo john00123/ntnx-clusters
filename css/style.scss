@@ -1,10 +1,10 @@
 //Comment for compiler
-// @import '../../_ntnx/variables';
-// @import '../../_ntnx/mixins';
+@import '../../_ntnx/variables';
+@import '../../_ntnx/mixins';
 
 html{
   @include font;
-  background-color: red;
+  background-color: -color-3;
 }
 body{
   @include flex(center, center, column);
