@@ -1,0 +1,25 @@
+//Comment for compiler
+// @import '../../_ntnx/variables';
+// @import '../../_ntnx/mixins';
+
+html{
+  @include font;
+  background-color: red;
+}
+body{
+  @include flex(center, center, column);
+  @include size(100vh, 100%);
+}
+
+
+button{
+  position: relative;
+  &:after{
+    content: 'Copied';
+    position: absolute;
+    height: 30px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    background-color:
+  }
+}
