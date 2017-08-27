@@ -1,5 +1,5 @@
 function copyToClipboard(element) {
-  var $temp = $("<input>");
+  var $temp = $("<input readonly="true">");
   $("body").append($temp);
   $temp.val($(element).text()).select();
   document.execCommand("copy");
