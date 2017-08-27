@@ -139,6 +139,10 @@ p {
   }
 }
 
+.input {
+  font-size: 40px;
+}
+
 .multi-clusters {
   display: flex;
   align-items: "";

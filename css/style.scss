@@ -80,7 +80,9 @@ p {
   font-size: 1.2em;
   }
 }
-
+.input{
+  font-size: 40px;
+}
 .multi-clusters{
   @include flex('','', column);
   width: 100%;
