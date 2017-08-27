@@ -48,6 +48,7 @@ h1{
   font: $h1;
   font-size: 2.5em;
   margin-bottom: 0;
+  letter-spacing: -0.02em;
 }
 
 .success{
@@ -67,7 +68,7 @@ h1{
 p {
   margin-top: 0;
   font: $p-alt;
-  font-weight: 00;
+  letter-spacing: -0.02em;
   white-space: pre-line;
   line-height: 150%;
   font-size: 1.2em;
