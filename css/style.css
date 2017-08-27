@@ -38,13 +38,13 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (max-width: 1080) {
   .box {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (max-width: 600px) {
+@media (-webkit-minn-device-pixel-ratio: 2), (max-width: 600px) {
   .box {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 
@@ -125,7 +125,7 @@ h1 {
 p {
   margin-top: 0;
   font: 300 14px/10px "nutanix_soft", san-serif;
-  font-weight: 400;
+  font-weight: 00;
   white-space: pre-line;
   line-height: 150%;
   font-size: 1.2em;
