@@ -8,19 +8,26 @@ html {
 }
 
 body {
+  padding: 20px;
+  overflow-x: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
   width: 960px;
-  margin: auto;
   box-sizing: border-box;
+  margin: auto;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -29,9 +36,21 @@ body {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (max-width: 1080) {
+  .box {
+    font-size: 1.5em;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (max-width: 600px) {
+  .box {
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 740px) {
   .box {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -65,6 +84,7 @@ button:active {
 
 h1 {
   font: 200 29px/20px "nutanix_soft", san-serif;
+  font-size: 2.5em;
 }
 
 .success {
@@ -103,8 +123,14 @@ h1 {
 
 p {
   font: 300 14px/10px "nutanix_soft", san-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   white-space: pre-line;
   line-height: 150%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  p {
+    font-size: 1em;
+  }
 }
