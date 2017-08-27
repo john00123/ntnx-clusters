@@ -15,7 +15,7 @@ body {
   justify-content: center;
   flex-direction: column;
   height: auto;
-  width: 100%;
+  width: auto;
   box-sizing: border-box;
 }
 
@@ -28,7 +28,6 @@ body {
   width: 960px;
   box-sizing: border-box;
   margin: auto;
-  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 1080px) {

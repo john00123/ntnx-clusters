@@ -10,14 +10,13 @@ body{
   padding: 20px;
   overflow-x: hidden;
   @include flex(flex-start, center, column);
-  @include size(auto, 100%);
+  @include size(auto, auto);
 }
 
 .box{
   @include flex(flex-start, center, column);
   @include size(auto,960px);
   margin: auto;
-    overflow-x: hidden;
   @media only screen and (max-width : 1080px) {
     width: 692px;
   }
