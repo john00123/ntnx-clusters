@@ -1,0 +1,110 @@
+html {
+  font: 300 14px/10px "nutanix_soft", san-serif;
+  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  background-color: grey-color-3;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 960px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1080px) {
+  .box {
+    width: 692px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .box {
+    width: 90%;
+  }
+}
+
+.cluster {
+  position: relative;
+}
+
+button {
+  border-radius: 4px;
+  vertical-align: baseline;
+  text-align: center;
+  display: inline-block;
+  padding: 11px 15px;
+  color: #FFFFFF;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  border: none;
+  text-decoration: none;
+  background-color: #22A5F7;
+}
+
+button:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #2282E3;
+}
+
+button:active {
+  color: #FFFFFF;
+  background-color: #2068CA;
+}
+
+h1 {
+  font: 200 29px/20px "nutanix_soft", san-serif;
+}
+
+.success {
+  border-radius: 4px;
+  vertical-align: baseline;
+  text-align: center;
+  display: inline-block;
+  padding: 11px 15px;
+  color: #FFFFFF;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  border: none;
+  text-decoration: none;
+  background-color: #22A5F7;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: black;
+  position: absolute;
+  pointer-events: none;
+  transform: translate3d(0, -10px, 0);
+  opacity: 0;
+}
+
+.success:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #2282E3;
+}
+
+.success:active {
+  color: #FFFFFF;
+  background-color: #2068CA;
+}
+
+.alt {
+  color: #627386;
+}
+
+p {
+  font: 300 14px/10px "nutanix_soft", san-serif;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: pre-line;
+  line-height: 150%;
+}

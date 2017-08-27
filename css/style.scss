@@ -4,22 +4,59 @@
 
 html{
   @include font;
-  background-color: -color-3;
+  background-color: grey-color-3;
 }
 body{
   @include flex(center, center, column);
-  @include size(100vh, 100%);
+  @include size(100vh,100vw);
 }
 
-
-button{
-  position: relative;
-  &:after{
-    content: 'Copied';
-    position: absolute;
-    height: 30px;
-    padding: 10px 15px;
-    border-radius: 2px;
-    background-color:
+.box{
+  width: 960px;
+  margin: auto;
+  box-sizing: border-box;
+  @media only screen and (max-width : 1080px) {
+    width: 692px;
+  }
+  @media only screen and (max-width : 740px) {
+    width: 90%;
   }
 }
+
+.cluster{
+position: relative;
+}
+
+button{
+  @include primary;
+}
+
+h1{
+  font: $h1;
+}
+
+.success{
+  @include primary;
+  @include transition(all);
+  background-color: black;
+  position: absolute;
+  pointer-events: none;
+  transform: translate3d(0, -10px,0);
+  opacity: 0;
+}
+
+.alt {
+  color: $font-color-2;
+}
+
+p {
+  font: $p-alt;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: pre-line;
+  line-height: 150%;
+
+}
+
+
+//media queries
