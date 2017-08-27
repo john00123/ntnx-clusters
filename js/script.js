@@ -21,15 +21,15 @@ if (td === '726'){
 } else if (td === '1031'){
   day = "🎃"
 }else{
-  day = "🙌";
+  day = "🔑";
 }
 
 
 
 
-$('.copy-button').click(function(){
+$('.cluster').click(function(){
   $('.icon').text(day);
-  $('.success').css({'opacity':'1', 'transform':'translate3d(0,0,0)'});
+  $('.success', this).css({'opacity':'1', 'transform':'translate3d(0,0,0)'});
   setTimeout(function(){
     $('.success').css({'opacity':'', 'transform':''});
   },1200);

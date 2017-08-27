@@ -103,6 +103,7 @@ h1 {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: black;
   position: absolute;
+  right: 0;
   pointer-events: none;
   transform: translate3d(0, -10px, 0);
   opacity: 0;
@@ -136,4 +137,25 @@ p {
   p {
     font-size: 1.2em;
   }
+}
+
+.multi-clusters {
+  display: flex;
+  align-items: "";
+  justify-content: "";
+  flex-direction: column;
+  width: 100%;
+}
+
+.cluster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  border-top: 1px solid #D5DAE0;
+}
+
+.right {
+  text-align: right;
 }
