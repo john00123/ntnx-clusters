@@ -15,7 +15,7 @@ body{
 
 .box{
   @include flex(flex-start, center, column);
-  @include size(auto,960px);
+  @include size(auto, 600px);
   margin: auto;
   @media only screen and (max-width : 1080px) {
     width: 692px;
@@ -36,9 +36,6 @@ body{
   }
 }
 
-.cluster{
-position: relative;
-}
 
 button{
   @include primary;
@@ -92,11 +89,21 @@ p {
   width: 100%;
 }
 .cluster{
+  position: relative;
   @include flex(center, space-between, row);
+  font-size: 0.9em;
   width: 100%;
   border-top: 1px solid $border-color-2;
+  h3{
+    font-weight: 500;
+  }
+  p{
+    
+    font-weight: 400;
+  }
 }
 .right{
   text-align: right;
+  font-weight: 400;
 }
 //media queries

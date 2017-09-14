@@ -26,6 +26,26 @@ if (td === '726'){
 }
 
 
+function Cluster(name, ip, type){
+  this.password = "D3l1ghtful5*";
+  this.name = name;
+  this.ip = ip;
+  this.type = type;
+  this.write = '<div class= \'cluster\'<h4>'+this.name+'</h4>'+'<p>'+this.type+'<br>'+this.ip+'</p></div>';
+}
+
+var ontimePC = new Cluster('OntimePC', '10.24.30.20', 'Prism Central');
+var ontimePE = new Cluster('OntimePE', '10.24.30.20', 'Prism Element');
+var ontimePH = new Cluster('OntimePh', '10.24.30.20', 'Prism hlement');
+
+var dracarys = [ontimePC, ontimePE, ontimePH];
+
+var i =0;
+while (i<dracarys.length){
+  $('.multi-clusters').append(dracarys[i].write);
+  i++;
+}
+
 
 
 $('.cluster').click(function(){
